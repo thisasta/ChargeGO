@@ -6,6 +6,11 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  line-height: 150%;
+}
+
+p {
+  font-size: 18px;
 }
 
 header li,
@@ -18,11 +23,15 @@ header button {
   background-color: black;
 }
 
+header li {
+  padding-right: 70%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10%;
+  padding: 1.1% 10%;
   background-color: black;
   width: 100%;
   position: fixed;
@@ -67,23 +76,24 @@ header button:hover {
 }
 
 .home {
-  height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 27% 10%;
+  padding: 10% 10% 5% 10%;
+  min-height: 1000px;
 }
 
 .phone-container img {
-  width: 400px;
+  width: 20%;
   height: auto;
   position: fixed;
   top: 170;
-  right: 170;
+  right: 5%;
 }
 
 .home-content {
-  max-width: 900px;
+  max-width: 70%;
+  
 }
 
 .home-content h1 {
@@ -104,7 +114,7 @@ header button:hover {
 }
 
 .home-content p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .home-content .btn-box {
