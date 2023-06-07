@@ -156,7 +156,7 @@ header button:hover {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   header .navLinks {
     display: none;
   }
