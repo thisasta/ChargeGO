@@ -195,10 +195,19 @@ header button:hover {
     width: 0;
     margin: 0;
   }
+
+  #phone-container2 img{
+    padding-top: 20%;
+    width: 100%;
+  }
 }
 
 @media (min-width: 700px) {
   #idk {
+    display: none;
+  }
+
+  #phone-container2{
     display: none;
   }
 }
