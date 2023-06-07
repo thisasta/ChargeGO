@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
@@ -152,4 +153,109 @@ header button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+
+  header button {
+    display: none;
+  }
+
+  header .navLinks {
+    display: none;
+  }
+
+  .home-content .btn-box {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .home {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-top: 30%;
+  }
+
+  .home-content h1 {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+  }
+  
+  .home-content h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #0077ac;
+  }
+  
+  .home-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0077ac;
+  }
+  
+  .home-content p {
+    font-size: 18px;
+  }
+
+  .phone-container img {
+    width: 100%;
+    position: static;
+  }
+
+  .btn-box button {
+    padding: 9px 25px;
+    background-color: black;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+  }
+  
+  .btn-box button:hover {
+    background-color: rgb(46, 46, 46);
+  }
+  
+  .btn-box button a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+  }
+  
+  .btn-box button a:hover {
+    background-color: rgb(46, 46, 46);
+  }
+
+  .home-content h1 {
+    font-size: 56px;
+  }
+
+  .home-content h2 {
+    font-size: 35px;
+  }
+}
+
+
+/*
+@media (max-width: 600px) {
+  .home {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .phone-container img {
+    width: 250px;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .home-content {
+    max-width: 50%;
+    text-align: left;
+  }
 }

@@ -1,62 +1,240 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChargeGO</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+      * {
+        background-color: white;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        line-height: 150%;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      header li,
+      header a,
+      header button {
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        background-color: black;
+      }
+
+      header li {
+        padding-right: 70%;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.1% 10%;
+        background-color: black;
+        width: 100%;
+        position: fixed;
+      }
+
+      header .logo {
+        cursor: pointer;
+        background-color: black;
+        width: 80px;
+      }
+
+      header .navLinks {
+        list-style: none;
+        background-color: black;
+      }
+
+      header .navLinks li {
+        display: inline-block;
+        padding: 0px 20px;
+      }
+
+      header .navLinks li a {
+        transition: all 0.3s ease 0s;
+      }
+
+      header .navLinks li a:hover {
+        color: lightgrey;
+      }
+
+      header button {
+        padding: 9px 25px;
+        background-color: white;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        color: black;
+      }
+
+      header button:hover {
+        background-color: lightgray;
+      }
+
+      .home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10% 10% 5% 10%;
+        min-height: 1000px;
+      }
+
+      .phone-container img {
+        width: 20%;
+        height: auto;
+        position: fixed;
+        top: 170;
+        right: 5%;
+      }
+
+      .home-content {
+        max-width: 70%;
+      }
+
+      .home-content h1 {
+        font-size: 56px;
+        font-weight: 700;
+      }
+
+      .home-content h2 {
+        font-size: 35px;
+        font-weight: 700;
+        color: #0077ac;
+      }
+
+      .home-content h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #0077ac;
+      }
+
+      .home-content p {
+        font-size: 18px;
+      }
+
+      .home-content .btn-box {
+        width: 345px;
+        height: 50px;
+      }
+
+      .btn-box button {
+        padding: 9px 25px;
+        background-color: black;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        color: white;
+      }
+
+      .btn-box button:hover {
+        background-color: rgb(46, 46, 46);
+      }
+
+      .btn-box button a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+      }
+
+      .btn-box button a:hover {
+        background-color: rgb(46, 46, 46);
+      }
+
+      .connected-fueling {
+        height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+      }
+    </style>
+  </head>
+
+  <body>
     <header>
-        <a href="index.html">
-            <img class="logo" src="./img/logo.png" alt="CHARGESPOT">
-        </a>
-        <nav>
-            <ul class="navLinks">
-                <li><a href="#">KONTAKTLOSES ZAHLEN</a></li>
-                <li><a href="#">NAVIGATION</a></li>
-                <li><a href="#">ÜBER UNS</a></li>
-                <li><a href="#">KONTAKT</a></li>
-            </ul>
-        </nav>
-        <a class="cta" href="#"><button>DOWNLOADS</button></a>
+      <a href="index.html">
+        <img class="logo" src="./img/logo.png" alt="CHARGESPOT" />
+      </a>
+      <nav>
+        <ul class="navLinks">
+          <li><a href="#">KONTAKTLOSES ZAHLEN</a></li>
+          <li><a href="#">NAVIGATION</a></li>
+          <li><a href="#">ÜBER UNS</a></li>
+          <li><a href="#">KONTAKT</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>DOWNLOADS</button></a>
     </header>
 
     <section class="home">
-        <div class="home-content">
-            <h1>ChargeGO</h1>
-            <h2>Deine E-Tankstellen App</h2>
-            <br>
-            <br>
-            <h3>1. E-Tankstelle finden</h3>
-            <p>Mit unserer Map-Funktion kannst du ganz bequem die nächste E-Tankstelle finden.</p>
-            <br>
-            <h3>2. Schnellladestation auswählen</h3>
-            <p>Bevor du dein Auto auflädst, wählst du die Schnellladestation in der App aus und lädst dein Auto normal auf.</p>
-            <br>
-            <h3>3. Bezahlen</h3>
-            <p>Darüber musst du dir keine Sorgen machen. Da du am Anfang schon die nötigen Bezahldaten eingeben musstest, bezahlt die App automatisch beim losfahren.</p>
-            <br>
-            <h3>4. Weiterfahren</h3>
-            <p>Wenn die App merkt, dass du nicht mehr fährst, schickt sie dir eine Mail mit der Rechnung.</p>
-            <br>
-            <h4>Lade dir die App jetzt runter!</h4>
-            <br>
-            <div class="btn-box">
-                <button><a href="#">DOWNLOADS</a></button>
-            </div>
+      <div class="home-content">
+        <h1>ChargeGO</h1>
+        <h2>Deine E-Tankstellen App</h2>
+        <br />
+        <br />
+        <h3>1. E-Tankstelle finden</h3>
+        <p>
+          Mit unserer Map-Funktion kannst du ganz bequem die nächste
+          E-Tankstelle finden.
+        </p>
+        <br />
+        <h3>2. Schnellladestation auswählen</h3>
+        <p>
+          Bevor du dein Auto auflädst, wählst du die Schnellladestation in der
+          App aus und lädst dein Auto normal auf.
+        </p>
+        <br />
+        <h3>3. Bezahlen</h3>
+        <p>
+          Darüber musst du dir keine Sorgen machen. Da du am Anfang schon die
+          nötigen Bezahldaten eingeben musstest, bezahlt die App automatisch
+          beim losfahren.
+        </p>
+        <br />
+        <h3>4. Weiterfahren</h3>
+        <p>
+          Wenn die App merkt, dass du nicht mehr fährst, schickt sie dir eine
+          Mail mit der Rechnung.
+        </p>
+        <br />
+        <h4>Lade dir die App jetzt runter!</h4>
+        <br />
+        <div class="btn-box">
+          <button><a href="#">DOWNLOADS</a></button>
         </div>
-        <div class="phone-container">
-            <img src="./img/image_iphone13promaxgraphite_portrait.png" alt="App">
-        </div>
+      </div>
+      <div class="phone-container">
+        <img src="./img/image_iphone13promaxgraphite_portrait.png" alt="App" />
+      </div>
     </section>
     <section class="connected-fueling">
-        <div class="home-content">
-            <h2>Was ist KONTAKTLOSES ZAHLEN?</h2>
-            <br>
-            <p>KONTAKTLOSES ZAHLEN ist eine Funktion, die vor allem für E-Auto Fahrer, die keine Zeit verschwenden wollen, interessant ist. Kein nerviges Warten. Keine nervige Interaktionen mit einem genervten Mitarbeiter. Einfach im vorhinein die Ladesäule und die Zahlmethode festlegen. Das Handy an die dafür vorhergesehene Stelle halten und die App zahlt. Danach können sie weiterfahren und bekommen die Rechnung in der App angezeigt.</p>
-        </div>
+      <div class="home-content">
+        <h2>Was ist KONTAKTLOSES ZAHLEN?</h2>
+        <br />
+        <p>
+          KONTAKTLOSES ZAHLEN ist eine Funktion, die vor allem für E-Auto
+          Fahrer, die keine Zeit verschwenden wollen, interessant ist. Kein
+          nerviges Warten. Keine nervige Interaktionen mit einem genervten
+          Mitarbeiter. Einfach im vorhinein die Ladesäule und die Zahlmethode
+          festlegen. Das Handy an die dafür vorhergesehene Stelle halten und die
+          App zahlt. Danach können sie weiterfahren und bekommen die Rechnung in
+          der App angezeigt.
+        </p>
+      </div>
     </section>
-</body>
+  </body>
 </html>
